@@ -1,0 +1,150 @@
+* {
+  --dull-text-color: #828282;
+}
+
+/* page info */
+.page-info {
+  margin: 27px;
+  text-align: center;
+}
+
+.page-info h2 {
+  line-height: 0.9em;
+  font-weight: 400;
+  color: #000;
+}
+
+.page-info p {
+  font-size: 14px;
+  line-height: 0.9em;
+  font-weight: 300;
+}
+/* end page info */
+
+/* profile data fields */
+
+
+/* profile header */
+.profile-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-info h2 {
+  font-size: 24px;
+  line-height: 0.8em;
+  font-weight: 400;
+  color: #000;
+}
+
+.profile-info p {
+  font-size: 13px;
+  font-size: 500;
+  line-height: 0.5em;
+  color: var(--dull-text-color);
+}
+
+.profile-view .profile-button {
+  background-color: white;
+  color: var(--dull-text-color);
+}
+
+.profile-view .profile-button:hover {
+  background-color: #eee;
+}
+/* end profile header */
+
+/* profile data */
+/* photo */
+.profile-view .photo-container {
+  position: relative;
+}
+/* end photo */
+
+.profile-view .profile-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 18px;
+}
+
+.profile-view .profile-label {
+  width: 100px;
+  color: #bdbdbd;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.profile-view .profile-value {
+  color: #333;
+  font-weight: 500;
+  outline: none;
+  flex-grow: 1;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.profile hr {
+  margin: 0 -18px;
+  border-top: 1px solid #e0e0e0;
+}
+/* end profile data */
+/* end profile form */
+
+.display-mobile {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .profile   {
+    width: 845px;
+    margin: auto;
+    padding: 30px 50px 10px 50px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+
+  .profile-view .profile-item {
+    padding: 20px 0;
+  }
+
+  .profile hr {
+    margin: 0 -50px;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .profile-view .profile-label {
+    width: 180px;
+  }
+
+  .profile-view .profile-value {
+    padding-left: 0;
+    padding-right: unset;
+    text-align: left;
+  }
+
+  .profile-view footer {
+    bottom: -20px;
+  }
+
+  .display-mobile {
+    display: none;
+  }
+}
+
+
+@media (min-width: 900px) and (min-height:900px) {
+  .profile-view .profile   {
+    position: absolute;
+    width: 845px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

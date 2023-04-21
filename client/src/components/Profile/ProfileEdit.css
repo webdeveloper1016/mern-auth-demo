@@ -1,0 +1,122 @@
+* {
+  --submit-button: #2f80ed;
+  --submit-button-hover: #206bce;
+  --dull-text-color: #828282;
+}
+
+.profile-edit .back {
+  border:none;
+  background-color: transparent;
+  color: var(--submit-button);
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-425px);
+  margin-bottom: 15px;
+}
+
+/* profile header */
+ .profile-edit .profile-header {
+  margin: -15px 0;
+}
+
+/* end profile header */
+
+/* profile data */
+/* photo */
+.profile-edit .photo-container {
+  position: relative;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.profile-edit .photo-edit {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 0;
+  width: 24px;
+  height: 24px;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.photo-edit circle {
+  stroke: #4f4f4f;
+}
+
+.photo-edit path {
+  fill: #4f4f4f;
+}
+/* end photo */
+
+/* profile form */
+form.profile-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-edit .profile-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.profile-edit .profile-label {
+  width: 100px;
+  color: #4f4f4f;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.profile-edit .profile-value {
+  color: #333;
+  height: 52px;
+  width: 100%;
+  max-width: 420px;
+  padding: 18px;
+  outline: none;
+  box-sizing: border-box; 
+  border: 1px solid #828282;
+  border-radius: 12px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* don't set height for text area */
+.profile-item textarea {
+  height: unset !important;
+  resize: none;
+  padding: 18px;
+  box-sizing: border-box; 
+}
+
+.profile-edit .profile-button {
+  background-color: var(--submit-button);
+  color: white;
+}
+
+.profile-edit .profile-button:hover {
+  background-color: var(--submit-button-hover);
+}
+
+.profile .error {
+  margin: auto;
+  color: red;
+}
+
+/* end profile data */
+/* end profile form */
+
+@media (min-width: 900px) {
+
+  .profile-edit footer {
+    bottom: -50px;
+    margin: -30px -60px;
+  }
+}

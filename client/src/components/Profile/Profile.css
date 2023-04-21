@@ -1,0 +1,78 @@
+* {
+  --submit-button: #2f80ed;
+  --submit-button-hover: #206bce;
+  --dull-text-color: #828282;
+}
+.user-menu {
+  top: 60px;
+  right: 10px;
+}
+
+.user-menu-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 10px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.profile-page {
+  padding: 18px;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .photo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+/* end header */
+
+/* common profile data */
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Edit and Save button */
+.profile-button {
+  width: 82px;
+  height: 38px;
+  border: 1px solid var(--dull-text-color);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.profile-button:hover {
+  cursor: pointer;
+}
+
+/* photo */
+.photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+/* end photo */
+/* end profile data */
+
+@media (min-width: 900px) {
+  footer {
+    position: relative;
+    margin: -15px -60px;
+    padding: 0;
+    align-self: center;
+    width: 865px;
+  }
+}
